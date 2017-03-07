@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/Jeffb3518/CraftCooler/issues"
   },
-  "homepage": "https://github.com/Jeffb3518/CraftCooler#readme"
+  "homepage": "https://github.com/Jeffb3518/CraftCooler#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mysql": "^2.13.0",
+    "path": "^0.12.7",
+    "sequelize": "^3.30.2"
+  }
 }
