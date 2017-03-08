@@ -1,0 +1,59 @@
+body {
+    background-image: url("../public/images/backgrounds/brown-background.jpg");
+ 
+}
+#masthead {
+	background: beige;
+	margin: 0 0 50px;
+	z-index: 99;
+	color: beige;
+	overflow: auto;
+	border-bottom: 5px solid white;
+    border-top: 5px solid white;
+	position: fixed;
+	width: 100%;
+}
+
+#loginbox {
+  margin-top: 175px;
+  background: none;
+}
+
+
+#smallbox {
+    border: 5px white solid;
+    border-radius: 0px;
+    background-image: url("../public/images/backgrounds/craft-beer.jpg");
+    background-size: cover;
+}
+
+#paneltop {
+    background-color: beige;
+    background-size: cover;
+    border-radius: 0px;
+}
+
+#sign-in {
+    color: #ffac00;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#logo {
+    margin-top: 25px;
+    padding-bottom: 20px;
+    height: 75px;
+}
+
+#page2header {
+    background-color: beige;
+    background-size: cover;
+    border-radius: 0px;
+}
+
+#page2box {
+    border: 5px white solid;
+    border-radius: 0px;
+    background-image: url("../public/images/backgrounds/craft-beer.jpg");
+    background-size: cover;
+}
