@@ -5,6 +5,28 @@ function findBeer(region){
 
         url += userInput
         url += key
-}
 
-// req.body.data[0]
+request(url, function(error,response, body){
+     if (!error && response.statusCode == 200) {
+         var beerData = JSON.parse(body)
+         var numResults = beerData.totalResults;
+
+ //Dynamically creating brewery objects containing only select information from breweries, in hopes to reduce payload of our API page.
+                      for (var i = 0; i < numResults; i++) {
+                          var selectedBreweryData = {
+                              breweryName: beerData.data[i].brewery.name,
+                              latitude: beerData.data[i].latitude,
+                              longitude: beerData.data[i].longitude,
+                              description: beerData.data[i].brewery.description,
+                              typeOfBrewery: beerData.data[i].locationTypeDisplay
+
+                          }
+                          //Pushing above object to our API for use on front-end.
+                          beerData.push(selectedBreweryData)
+                          frontEndData.push(selectedBreweryData);
+                      }
+                      res.json(frontEndData);
+                }
+            })
+        }
+})
