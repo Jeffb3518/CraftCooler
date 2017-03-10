@@ -24,7 +24,7 @@ res.json(users)
  
    // POST route for saving a new post
   app.post("/api/users", function(req, res) {
-    console.log("yea")
+    console.log("yes")
     db.User.create(req.body).then(function(dbUser) {
       res.json("true"); 
     });
