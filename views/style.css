@@ -57,3 +57,11 @@ body {
     background-image: url("../public/images/backgrounds/craft-beer.jpg");
     background-size: cover;
 }
+
+#main-bio {
+    color: white;
+}
+
+#beer-table {
+    color: white;
+}
