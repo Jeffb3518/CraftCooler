@@ -57,3 +57,7 @@ body {
     background-image: url("../public/images/backgrounds/craft-beer.jpg");
     background-size: cover;
 }
+
+#footer {
+   color: #ffffff;
+}

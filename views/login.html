@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <!-- Title Information -->
     <title>CraftCooler</title>
+    <link rel="icon" href="/favicon.ico">
     <!--Bootstrap CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -56,7 +57,15 @@
                             <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
                         </div>
 
-
+                        <div class="form-group">
+                            <div class="col-md-12 control">
+                                <div style="border-top: 1px solid#888; padding-top:25px; font-size:15px">                                   
+                                    <a href="#" class="a-signup" onclick="$('#loginbox').hide(); $('#signupbox').show()">
+                                    Sign-in
+                                </a>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="input-group">
                             <div class="checkbox">
@@ -65,10 +74,6 @@
                             </label>
                             </div>
                         </div>
-
-
-
-
 
                         <div class="form-group">
                             <div class="col-md-12 control">
