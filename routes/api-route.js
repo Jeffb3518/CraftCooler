@@ -1,5 +1,5 @@
-function findBeer(region){
-    var userInput = "florida"
+function findBeer(){
+    var userInput = "florida";
     var url = "https://api.brewerydb.com/v2/locations/?region=";
     var key = "fda76aae9f5c3b395e3b587a4fa4318f&format=json";
 
@@ -15,10 +15,10 @@ request(url, function(error,response, body){
     for (var i = 0; i < numResults; i++) {
         var selectedBreweryData = {
             breweryName: beerData.data[i].brewery.name,
-            latitude: beerData.data[i].latitude,
-            longitude: beerData.data[i].longitude,
+            location: beerData.data[i].locality,
+            state: beerData.data[i].region,
             description: beerData.data[i].brewery.description,
-            typeOfBrewery: beerData.data[i].locationTypeDisplay
+            berrName: beerData.data[i].name
 
         }
     //Pushing above object to our API for use on front-end.
