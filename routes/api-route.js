@@ -7,7 +7,7 @@ function findBeer(){
         url += userInput
         url += key
 
-        console.log(url);
+        // console.log(url);
 
 request(url, function(error,response, body){
     console.log("test")
