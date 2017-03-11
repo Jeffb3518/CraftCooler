@@ -7,12 +7,12 @@ function findBeer(){
         url += userInput
         url += key
 
-        console.log(url);
+        // console.log(url);
 
 request(url, function(error,response, body){
-    console.log("test")
+    // console.log("test")
      if (error && response.statusCode == 200) {
-         console.log('error');
+        //  console.log('error');
      } else {
          var beerData = JSON.parse(body)
          var numResults = beerData.totalResults;

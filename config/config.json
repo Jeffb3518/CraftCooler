@@ -1,25 +1,21 @@
 {
     "development": {
         "username": "root",
-        "password": "",
+        "password": "123",
         "database": "craftcool",
         "host": "127.0.0.1",
-        "dialectOptions": {
-            "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock",
-            "supportBigNumbers": true,
-            "bigNumberStrings": true
-        }
-    },
+        "dialect": "mysql"
+        },
     "test": {
         "username": "root",
-        "password": "",
+        "password": "123",
         "database": "craftcool",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
     "production": {
         "username": "root",
-        "password": "",
+        "password": "123",
         "database": "craftcool",
         "host": "127.0.0.1",
         "use_env_variable":"",
