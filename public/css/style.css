@@ -21,19 +21,6 @@ body {
 }
 
 
-#smallbox {
-    border: 5px white solid;
-    border-radius: 0px;
-    background-image: url("../public/images/backgrounds/craft-beer.jpg");
-    background-size: cover;
-}
-
-#paneltop {
-    background-color: beige;
-    background-size: cover;
-    border-radius: 0px;
-}
-
 #sign-in {
     color: #ffac00;
     font-size: 25px;
@@ -81,3 +68,13 @@ body {
     margin-top: 115px;
 }
 
+#page2header {
+        background-color: #ffac00;
+        border-radius: 5px;
+        color: white;
+}
+
+#btn-signup {
+        background: #ffac00;
+        margin-left: 110px;
+}
