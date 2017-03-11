@@ -1,25 +1,45 @@
 {
     "development": {
         "username": "root",
+<<<<<<< HEAD
         "password": "root",
+=======
+<<<<<<< HEAD
+        "password": "mike1978",
+=======
+        "password": "123",
+>>>>>>> 9a4981bad0c9699606d64511e3720f875bb84bb0
+>>>>>>> b4ed7e9cd4faf389c1a3fafb800e3a9314b2edbd
         "database": "craftcool",
         "host": "127.0.0.1",
-        "dialectOptions": {
-            "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock",
-            "supportBigNumbers": true,
-            "bigNumberStrings": true
-        }
-    },
+        "dialect": "mysql"
+        },
     "test": {
         "username": "root",
+<<<<<<< HEAD
         "password": "root",
+=======
+<<<<<<< HEAD
+        "password": "mike1978",
+=======
+        "password": "123",
+>>>>>>> 9a4981bad0c9699606d64511e3720f875bb84bb0
+>>>>>>> b4ed7e9cd4faf389c1a3fafb800e3a9314b2edbd
         "database": "craftcool",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
     "production": {
         "username": "root",
+<<<<<<< HEAD
         "password": "root",
+=======
+<<<<<<< HEAD
+        "password": "mike1978",
+=======
+        "password": "123",
+>>>>>>> 9a4981bad0c9699606d64511e3720f875bb84bb0
+>>>>>>> b4ed7e9cd4faf389c1a3fafb800e3a9314b2edbd
         "database": "craftcool",
         "host": "127.0.0.1",
         "use_env_variable":"",
