@@ -1,13 +1,9 @@
 $(document).ready(function() {
   // Getting references to the name inout and user container, as well as the table body
-  var nameInput = $("#name");
-  var usernameInput = $('#username');
+  var firstNameInput = $("#firstName");
+  var lastNameInput = $("#lastName");
   var emailInput = $('#email');
   var passInput = $('#password');
-  var companyInput = $('#company');
-  var phoneInput = $('#phone');
-  var descInput = $('#description');
-  
 
   var userContainer = $(".user-container");
   // Adding event listeners to the form to create a new object, and the button to delete
@@ -19,18 +15,15 @@ $(document).ready(function() {
   function handleUserFormSubmit(event) {
     event.preventDefault();
     // Don't do anything if the name fields hasn't been filled out
-    if (!nameInput.val().trim().trim()) {
+    if (!firstNameInput.val().trim().trim()) {
       return;
     }
     // Calling the upsertUser function and passing in the value of the name input
     upsertUser({
-      name: nameInput.val().trim(),
-      username: usernameInput.val().trim(),
+      first_name: firstNameInput.val().trim(),
+      last_name: lastNameInput.val().trim(),
       email: emailInput.val().trim(),
       password: passInput.val().trim(),
-      company_name: companyInput.val().trim(),
-      phone_number: phoneInput.val().trim(),
-      profile_desc: descInput.val().trim()
         
     });
   }
@@ -60,3 +53,4 @@ $(document).ready(function() {
 
 
 });
+
