@@ -5,6 +5,7 @@ body {
 #masthead {
 	background: beige;
 	margin: 0 0 50px;
+    top: 0px;
 	z-index: 99;
 	color: beige;
 	overflow: auto;
@@ -61,3 +62,22 @@ body {
 #footer {
    color: #ffffff;
 }
+
+#main-bio {
+    color: white;
+}
+
+#beer-table {
+    color: white;
+}
+
+#dropdown{
+    color: black;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    margin-top: 115px;
+}
+
