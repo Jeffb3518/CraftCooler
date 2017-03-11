@@ -27,7 +27,7 @@ app.use(express.static("./public"));
 //NEED TO BE EDITED
 require("./routes/html-routes.js")(app);
 require("./routes/user-api-routes.js")(app);
-// require("./routes/products-api-routes.js")(app);
+require("./routes/api-route.js")(app);
 
 // Syncing our sequelize models and then starting our express app
 db.sequelize.sync({}).then(function() {
