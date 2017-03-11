@@ -1,21 +1,33 @@
 {
     "development": {
         "username": "root",
+<<<<<<< HEAD
         "password": "mike1978",
+=======
+        "password": "123",
+>>>>>>> 9a4981bad0c9699606d64511e3720f875bb84bb0
         "database": "craftcool",
         "host": "127.0.0.1",
         "dialect": "mysql"
         },
     "test": {
         "username": "root",
+<<<<<<< HEAD
         "password": "mike1978",
+=======
+        "password": "123",
+>>>>>>> 9a4981bad0c9699606d64511e3720f875bb84bb0
         "database": "craftcool",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
     "production": {
         "username": "root",
+<<<<<<< HEAD
         "password": "mike1978",
+=======
+        "password": "123",
+>>>>>>> 9a4981bad0c9699606d64511e3720f875bb84bb0
         "database": "craftcool",
         "host": "127.0.0.1",
         "use_env_variable":"",
