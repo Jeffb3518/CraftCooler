@@ -1,21 +1,25 @@
 {
     "development": {
         "username": "root",
-        "password": "123",
+        "password": "root",
         "database": "craftcool",
         "host": "127.0.0.1",
-        "dialect": "mysql"
+        "dialectOptions": {
+            "socketPath": "/Applications/MAMP/tmp/mysql/mysql.sock",
+            "supportBigNumbers": true,
+            "bigNumberStrings": true
+        }
     },
     "test": {
         "username": "root",
-        "password": "123",
+        "password": "root",
         "database": "craftcool",
         "host": "127.0.0.1",
         "dialect": "mysql"
     },
     "production": {
         "username": "root",
-        "password": "123",
+        "password": "root",
         "database": "craftcool",
         "host": "127.0.0.1",
         "use_env_variable":"JAWSDB_URL",
