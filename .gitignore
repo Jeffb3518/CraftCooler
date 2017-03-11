@@ -1,3 +1,7 @@
 node_modules
 .DS_Store
+<<<<<<< HEAD
 config
+=======
+config
+>>>>>>> 45f545d6193bdbdac69f139371c86acdff43092f
