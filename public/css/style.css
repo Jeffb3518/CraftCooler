@@ -34,12 +34,6 @@ body {
     height: 75px;
 }
 
-#page2header {
-    background-color: beige;
-    background-size: cover;
-    border-radius: 0px;
-}
-
 #page2box {
     border: 5px white solid;
     border-radius: 0px;
@@ -67,12 +61,6 @@ body {
     background-color: #f8f8f8;
     border-color: #e7e7e7;
     margin-top: 115px;
-}
-
-#page2header {
-        background-color: #ffac00;
-        border-radius: 5px;
-        color: white;
 }
 
 #btn-signup {
