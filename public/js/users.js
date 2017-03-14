@@ -48,9 +48,5 @@ $(document).ready(function() {
       initializeRows();
     });
   }
-
-
-
-
 });
 
