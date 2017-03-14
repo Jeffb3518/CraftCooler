@@ -22,9 +22,9 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname + "/../public/login.html"));
   });
 
-//   app.get("/profile", function(req, res) {
-//     res.sendFile(path.join(__dirname + "/../views/profile.html"));
-//   });
+  app.get("/profile", function(req, res) {
+    res.sendFile(path.join(__dirname + "/../public/profile.html"));
+  });
 
 //   // blog route loads page3.html (route will need to be renamed)
 //   app.get("/search", function(req, res) {
