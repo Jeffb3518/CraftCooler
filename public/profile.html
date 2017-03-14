@@ -24,6 +24,7 @@
     <!-- JS/Bootstrap CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script src="./js/frontEndData.js"></script>
 
 <body>
 
@@ -33,7 +34,7 @@
             <a href="login.html"><img id="logo" src="./images/logos/combo_logo.png"/></a>
 
                 <!--Cities Dropdown-->
-                <select class="dropdown">
+                <select class="dropdown" id="dropdown">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -192,10 +193,10 @@
         <!--<h2>My CraftCooler</h2>
         <p>Beer Stats</p>-->
 
-        <table class="table table-bordered">
+        <table class="table table-striped">
             <thead>
                 <tr id="table-cat">
-                    <th>C.B.</th>
+                    <th></th>
                     <th>Beer</th>
                     <th>Brewery</th>
                     <th>City of Origin</th>
@@ -204,7 +205,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="tab-item">
                     <td><input type="checkbox"></td>
                     <td>#</td>
                     <td>#</td>
@@ -212,7 +213,7 @@
                     <td>#</td>
                     <td>#</td>
                 </tr>
-                <tr>
+                <tr id="tab-item">
                     <td><input type="checkbox"></td>
                     <td>#</td>
                     <td>#</td>
@@ -220,7 +221,7 @@
                     <td>#</td>
                     <td>#</td>
                 </tr>
-                <tr>
+                <tr id="tab-item">
                     <td><input type="checkbox"></td>
                     <td>#</td>
                     <td>#</td>
