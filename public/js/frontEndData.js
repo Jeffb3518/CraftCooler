@@ -23,6 +23,14 @@ $.post("/beerData", userData, function(data) {
        var stateResult = $("<p>").text("State: " + region);
        var descriptionResult = $("<p>").text("Description: " + brewery.description);
        var beerNameResult = $("<p>").text("Name: " + name);
+
+       beerDiv.append(nameResult);
+       beerDiv.append(locationResult);
+       beerDiv.append(stateResult);
+       beerDiv.append(descriptionResult);
+       beerDiv.append(beerNameResult);
+
+       $("#beer-table").append(beerDiv);
    }
 
 console.log(data);
