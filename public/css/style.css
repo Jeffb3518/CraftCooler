@@ -1,5 +1,6 @@
 body {
-    background-image: url("../images/backgrounds/brown-background.jpg");
+    /*background-image: url("../images/backgrounds/brown-background.jpg");*/
+    background: #fffbf4;
  
 }
 #masthead {
@@ -45,7 +46,7 @@ body {
 }
 
 #main-bio {
-    color: white;
+    color: black;
 }
 
 #beer-table {
@@ -73,4 +74,12 @@ body {
 
 #bio-info {
     text-align: center;
+}
+
+#dropdown{
+    color: black;
+}
+
+#tab-item{
+    color: black
 }
