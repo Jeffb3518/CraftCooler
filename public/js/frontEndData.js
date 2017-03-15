@@ -10,7 +10,7 @@ $('#runSearch').on('click', function(){
 $.post("/beerData", userData, function(data) {
 
    for(var i = 0; i < data.length; i++) {
-       var beerDiv = $("<div class=\"beer-item\">");
+       var beerDiv = $("<div class=\"beer-table\">");
 
        var name = data[i].brewery.name
        var location = data[i].locality
@@ -30,7 +30,7 @@ $.post("/beerData", userData, function(data) {
        beerDiv.append(descriptionResult);
        beerDiv.append(beerNameResult);
 
-       $("#beer-table").append(beerDiv);
+       $(".beer-table").append(beerDiv);
    }
 
 console.log(data);
