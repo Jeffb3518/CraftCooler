@@ -67,7 +67,7 @@ body {
 .navbar-default {
     background-color: #f8f8f8;
     border-color: #e7e7e7;
-    margin-top: 115px;
+    position: relative;
 }
 
 #btn-signup {
@@ -94,4 +94,14 @@ body {
 
 .table-bordered{
     border-radius: 4px;
+}
+
+#state-scroll{
+    height: 90vh;
+    overflow: auto;
+}
+
+.stick {
+    position: fixed;
+    top: 0;
 }
