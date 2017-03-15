@@ -3,6 +3,8 @@ var userData = {
     location: "Florida"
 }
 
+console.log("working");
+
 $('#runSearch').on('click', function(){
 
 $.post("/beerData", userData, function(data) {
