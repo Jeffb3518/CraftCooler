@@ -25,38 +25,18 @@ request(url, function(error,response, body){
          console.log
  //Dynamically creating brewery objects containing only select information from breweries, in hopes to reduce payload of our API page.
     for (var i = 0; i < numResults; i++) {
-        
-        if (beerData.data[i] !== undefined) {
+
+         if (beerData.data[i] !== undefined) {
 
 
         var selectedBreweryData = {
-            breweryName: "",
-            location: "",
-            state: "",
-            description: "",
-            beerName:""
+            breweryName: beerData.data[i].brewery.name,
+            location: beerData.data[i].locality,
+            state: beerData.data[i].region,
+            description: beerData.data[i].brewery.description,
+            beerName: beerData.data[i].name
 
          }
-
-        if (beerData.data[i].brewery !== undefined) {
-            selectedBreweryData.breweryName = beerData.data[i].brewery.name;
-        }
-
-        if (beerData.data[i].locality !== undefined){
-            selectedBreweryData.location = beerData.data[i].locality;
-        }
-
-        if (beerData.data[i].region !== undefined) {
-            selectedBreweryData.state = beerData.data[i].region;
-        }
-
-        if (beerData.data[i].brewery !== undefined) {
-            selectedBreweryData.description = beerData.data[i].brewery.description;
-        }
-
-        if (beerData.data[i].name !== undefined) {
-            selectedBreweryData = beerData.data[i].name;
-        }
 
 
     //Pushing above object to our API for use on front-end.
@@ -65,7 +45,6 @@ request(url, function(error,response, body){
         }
 
     }
-
         res.json(frontEndData);
     }
 })
