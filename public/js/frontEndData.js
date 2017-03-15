@@ -9,7 +9,9 @@ $('#runSearch').on('click', function(){
 
 $.post("/beerData", userData, function(data) {
 
-    // $("#breweryName").text(data.brewery.name);
+   for(var i = 0; i < data.length; i++) {
+       $("div").append(data[i].brewery.name)
+   }
 
 console.log(data);
 });
