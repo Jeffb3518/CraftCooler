@@ -10,7 +10,27 @@ $('#runSearch').on('click', function(){
 $.post("/beerData", userData, function(data) {
 
    for(var i = 0; i < data.length; i++) {
-       $("div").append(data[i].brewery.name)
+       var beerDiv = $("<div class=\"beer-table\">");
+
+       var name = data[i].brewery.name
+       var location = data[i].locality
+       var state = data[i].region
+       var description = data[i].brewery.description
+       var beerName = data[i].name
+
+       var nameResult = $("<p>").text("Brewery Name: " + brewery.name);
+       var locationResult = $("<p>").text("City: " + locality);
+       var stateResult = $("<p>").text("State: " + region);
+       var descriptionResult = $("<p>").text("Description: " + brewery.description);
+       var beerNameResult = $("<p>").text("Name: " + name);
+
+       beerDiv.append(nameResult);
+       beerDiv.append(locationResult);
+       beerDiv.append(stateResult);
+       beerDiv.append(descriptionResult);
+       beerDiv.append(beerNameResult);
+
+       $(".beer-table").append(beerDiv);
    }
 
 console.log(data);
