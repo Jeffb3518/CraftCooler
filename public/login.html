@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/frontEndData.js"></script>
 
 </head>
 <style>
@@ -98,13 +99,19 @@
         /* Dark Brown */
         color: #ffffff;
     }
-
-    .bg-3 {
+    .flex-container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+        width: 875px;
+        height: 75px;
         background-color: white;
+    }
+
+    .flex-item {
         color: #ffac00;
-        /*font-weight: bold;*/
-        padding-top: 30px;
-        padding-bottom: 20px;
+        padding-top: 20px;
     }
 
     #btn-signup {
@@ -263,8 +270,8 @@
         <!--</div>-->
     </div>
 
-    <footer class="container-fluid bg-3 text-center">
-        <p>© CraftCooler by Jeffrey Bauer, Kristina Lyons & Eric Tetenbaum</p>
+    <footer class="flex-container">
+        <p class="flex-item">© CraftCooler by Jeffrey Bauer, Kristina Lyons & Eric Tetenbaum</p>
     </footer>
     <script src="../js/user.js" type="text/javascript"></script>
 </body>

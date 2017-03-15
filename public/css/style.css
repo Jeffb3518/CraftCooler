@@ -47,6 +47,13 @@ body {
 
 #main-bio {
     color: black;
+    border:1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    background-color:   #fcfbf9;
+    background-clip: inherit;
+    margin-left: 10px;
+    padding-bottom: 162px
 }
 
 #beer-table {
