@@ -97,11 +97,15 @@ body {
 }
 
 #state-scroll{
-    height: 90vh;
+    height: 70vh;
     overflow: auto;
 }
 
 .stick {
     position: fixed;
     top: 0;
+}
+
+#search{
+    margin-right: 300px;
 }
