@@ -29,9 +29,10 @@ body {
 }
 
 #logo {
-    margin-top: 25px;
-    padding-bottom: 20px;
-    height: 75px;
+    margin-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    height: 45px;
 }
 
 #page2box {
@@ -67,7 +68,7 @@ body {
 .navbar-default {
     background-color: #f8f8f8;
     border-color: #e7e7e7;
-    margin-top: 115px;
+    position: relative;
 }
 
 #btn-signup {
@@ -95,3 +96,25 @@ body {
 .table-bordered{
     border-radius: 4px;
 }
+
+#state-scroll{
+    height: 70vh;
+    overflow: auto;
+    display: inline-block;
+}
+
+.stick {
+    position: fixed;
+    top: 0;
+}
+
+#search{
+    margin-right: 300px;
+    display: inline-block;
+}
+
+#search-btn{
+    width: 50%;
+    display: inline-block;
+}
+
