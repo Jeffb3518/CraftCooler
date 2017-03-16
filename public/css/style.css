@@ -29,9 +29,10 @@ body {
 }
 
 #logo {
-    margin-top: 25px;
-    padding-bottom: 20px;
-    height: 75px;
+    margin-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    height: 45px;
 }
 
 #page2box {
@@ -99,6 +100,7 @@ body {
 #state-scroll{
     height: 70vh;
     overflow: auto;
+    display: inline-block;
 }
 
 .stick {
@@ -108,4 +110,11 @@ body {
 
 #search{
     margin-right: 300px;
+    display: inline-block;
 }
+
+#search-btn{
+    width: 50%;
+    display: inline-block;
+}
+
