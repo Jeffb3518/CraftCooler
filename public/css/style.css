@@ -100,7 +100,6 @@ body {
 #state-scroll{
     height: 70vh;
     overflow: auto;
-    display: inline-block;
 }
 
 .stick {
