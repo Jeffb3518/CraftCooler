@@ -1,12 +1,16 @@
 // on Click asssociated with the serach button
 var userData = {
-    location: "Florida" 
+    location: "" 
 }
 
 console.log("working");
 
 $('.stateSelect').on('click', function(){
-// userData.location = 
+
+$('.beer').empty()
+
+userData.location = $(this).text()
+
 $.post("/beerData", userData, function(data) {
 
 console.log("post worked")
@@ -29,7 +33,6 @@ console.log("post worked")
        beerDiv.append(locationResult);
        beerDiv.append(stateResult);
        beerDiv.append(descriptionResult);
-
        
        $(".beer").append(beerDiv);
    }
