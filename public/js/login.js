@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  // Getting references to our form and inputs
+  // Getting references to our inputs
   var emailInput = $("#login-username");
   var passwordInput = $("#login-password");
 
-  // When the form is submitted, we validate there's an email and password entered
+  // When submitted, we validate there's an email and password entered
   $("#btn-login").on("click", function() {
     var userData = {
       email: emailInput.val().trim(),
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
   function loginUser(email, password) {
-    $.post("/api/login", {
+    $.post("/api/profile", {
       email: email,
       password: password
     }).then(function(data) {

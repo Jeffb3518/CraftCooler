@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // Getting references to our form and input
+  // Getting references to our input
   var firstName = $("#firstName");
   var lastName = $("#lastName");
   var emailInput = $("email");
@@ -28,7 +28,7 @@ $(document).ready(function() {
   // Does a post to the signup route. If succesful, we are redirected to the members page
   // Otherwise we log any errors
   function signUpUser(first, last, email, password) {
-    $.post("/api/signup", {
+    $.post("/api/profile", {
       first: first name,
       last: last name,
       email: email,

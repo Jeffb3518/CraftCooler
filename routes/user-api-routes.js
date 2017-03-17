@@ -23,14 +23,14 @@ app.post("/api/signup", function(req, res) {
       res.redirect(8080, "/public/login");
     }).catch(function(err) {
       console.log(err);
-      res.redirect(8080, "/api/login");
+      res.redirect(8080, "/api/profile");
       res.json(err);
     });
   });
 // route for logging in
 
 app.post("/api/login", passport.authenticate("local"), function(req, res) {
-  res.json("/login");
+  res.json("/profile");
  });
 
  // route to log out

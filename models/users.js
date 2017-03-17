@@ -25,7 +25,7 @@
 //     return User;
 // };
 
-// Requiring bcrypt for password hashing. Using the bcrypt version as the regular bcrypt module
+// Requiring bcrypt for password hashing. Using the bcrypt-node js version as the regular bcrypt module
 var bcrypt = require("bcrypt-nodejs");
 // Creating our User model
 module.exports = function(sequelize, DataTypes) {
