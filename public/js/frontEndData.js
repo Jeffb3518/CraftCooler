@@ -1,14 +1,15 @@
 // on Click asssociated with the serach button
 var userData = {
-    location: "Alabama"
+    location: "Florida" 
 }
 
 console.log("working");
 
-$('#runSearch').on('click', function(){
-
+$('.stateSelect').on('click', function(){
+// userData.location = 
 $.post("/beerData", userData, function(data) {
 
+console.log("post worked")
    for(var i = 0; i < data.length; i++) {
        var beerDiv = $("<tr/>");
 
@@ -38,6 +39,4 @@ $.post("/beerData", userData, function(data) {
 console.log(data);
 });
 });
-
-$('#runSearch').trigger('click');
     
