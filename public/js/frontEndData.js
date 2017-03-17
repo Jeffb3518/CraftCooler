@@ -17,7 +17,7 @@ console.log("post worked")
    for(var i = 0; i < data.length; i++) {
        var beerDiv = $("<tr/>");
 
-   if ((data[i].breweryName !== undefined) || (data[i].location !== undefined) || (data[i].state !== undefined) || (data[i].description !== undefined)){
+   if ((data[i].breweryName !== undefined) && (data[i].location !== undefined) && (data[i].state !== undefined) && (data[i].description !== undefined)){
 
        var name = data[i].breweryName
        var location = data[i].location
