@@ -3,7 +3,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var sequelize = require("sequelize");
-// var passport = require("./config/passport");
+var passport = require("./config/passport");
 
 
 // Sets up the Express App
