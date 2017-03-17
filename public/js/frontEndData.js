@@ -1,41 +1,45 @@
 // on Click asssociated with the serach button
 var userData = {
-    location: "Florida"
+    location: "" 
 }
 
 console.log("working");
 
-$('#runSearch').on('click', function(){
+$('.stateSelect').on('click', function(){
+
+$('.beer').empty()
+
+userData.location = $(this).text()
 
 $.post("/beerData", userData, function(data) {
 
+console.log("post worked")
    for(var i = 0; i < data.length; i++) {
-       var beerDiv = $("<div class=\"beer-table\">");
+       var beerDiv = $("<tr/>");
 
-       var name = data[i].brewery.name
-       var location = data[i].locality
-       var state = data[i].region
-       var description = data[i].brewery.description
-       var beerName = data[i].name
+   if ((data[i].breweryName !== undefined) || (data[i].location !== undefined) || (data[i].state !== undefined) || (data[i].description !== undefined)){
 
-       var nameResult = $("<p>").text("Brewery Name: " + brewery.name);
-       var locationResult = $("<p>").text("City: " + locality);
-       var stateResult = $("<p>").text("State: " + region);
-       var descriptionResult = $("<p>").text("Description: " + brewery.description);
-       var beerNameResult = $("<p>").text("Name: " + name);
+       var name = data[i].breweryName
+       var location = data[i].location
+       var state = data[i].state
+       var description = data[i].description
+
+       var nameResult = $("<td>").text("Brewery Name: " + data[i].breweryName);
+       var locationResult = $("<td>").text("City: " + data[i].location);
+       var stateResult = $("<td>").text("State: " + data[i].state);
+       var descriptionResult = $("<td>").text("Description: " + data[i].description);
 
        beerDiv.append(nameResult);
        beerDiv.append(locationResult);
        beerDiv.append(stateResult);
        beerDiv.append(descriptionResult);
-       beerDiv.append(beerNameResult);
-
-       $(".beer-table").append(beerDiv);
+       
+       $(".beer").append(beerDiv);
    }
+}
+
 
 console.log(data);
 });
 });
-
-$('#runSearch').trigger('click');
     
