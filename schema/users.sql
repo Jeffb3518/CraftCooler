@@ -6,8 +6,8 @@ USE craft;
 
 CREATE TABLE users 
 (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+first VARCHAR(75), 
+last VARCHAR(75), 
 email VARCHAR(75), 
-password VARCHAR(75), 
-first_name VARCHAR(50), 
-last_name VARCHAR(50)
+password VARCHAR(75)
 );
