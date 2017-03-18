@@ -24,10 +24,10 @@ console.log("post worked")
        var state = data[i].state
        var description = data[i].description
 
-       var nameResult = $("<td>").text("Brewery Name: " + data[i].breweryName);
-       var locationResult = $("<td>").text("City: " + data[i].location);
-       var stateResult = $("<td>").text("State: " + data[i].state);
-       var descriptionResult = $("<td>").text("Description: " + data[i].description);
+       var nameResult = $("<td>").text(data[i].breweryName);
+       var locationResult = $("<td>").text(data[i].location);
+       var stateResult = $("<td>").text(data[i].state);
+       var descriptionResult = $("<td>").text(data[i].description);
 
        beerDiv.append(nameResult);
        beerDiv.append(locationResult);
