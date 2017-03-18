@@ -33,6 +33,20 @@ app.post("/api/login", passport.authenticate("local"), function(req, res) {
   res.json("/profile");
  });
 
+ app.get("/api/userInfo", function(req, res){
+    db.User.findAll({})
+      .then(function(data) {
+        console.log(data);
+        res.json(data);
+    });
+ });
+
+  // db.User.findOne({
+  //     where: {
+  //       email: req.body.email
+  //     }
+  //   })
+
  // route to log out
 
  // Route for logging user out

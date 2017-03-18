@@ -50,7 +50,7 @@ body {
     border:1px solid black;
     border-radius: 5px;
     padding: 15px;
-    background-color:   #fcfbf9;
+    background-color: #fcfbf9;
     background-clip: inherit;
     margin-left: 10px;
     padding-bottom: 162px
@@ -82,6 +82,7 @@ body {
 
 #bio-info {
     text-align: center;
+    width: 20%;
 }
 
 #dropdown{
@@ -120,4 +121,10 @@ body {
 #dropdown{
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+#nav-top{
+    position: fixed;
+    width: 100%;
+    z-index: +5;
 }
