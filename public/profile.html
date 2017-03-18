@@ -56,7 +56,7 @@
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select a State <span class="caret"></span></a>
                 <ul class="dropdown dropdown-menu" id="state-scroll">
-                    <li><a class="stateSelect" href="#">Alabama</a></li>
+                    <li><a class="stateSelect"href="#">Alabama</a></li>
                     <li><a class="stateSelect"href="#">Alaska</a></li>
                     <li><a class="stateSelect"href="#">Arizona</a></li>
                     <li><a class="stateSelect"href="#">Arkansas</a></li>
@@ -110,6 +110,8 @@
             </ul>
       </form>
 
+      <span>Hello, <span id="name"></span></span>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Log Out</a></li>
         
@@ -153,6 +155,14 @@
     </div>
 
     <script src="./js/frontEndData.js"></script>
+    <script>
+        $(document).ready(function() {
+            var userName = localStorage.getItem('userData');
+            console.log(userName);
+            
+            $('#name').html(userName);
+        });
+    </script>
 
 </body>
 
