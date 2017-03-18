@@ -2,7 +2,7 @@ $(document).ready(function() {
   // Getting references to our input
   var firstName = $("#firstName");
   var lastName = $("#lastName");
-  var emailInput = $("email");
+  var emailInput = $("#email");
   var passwordInput = $("#password");
 
   // When the signup button is clicked, we validate the email and password are not blank
@@ -14,11 +14,13 @@ $(document).ready(function() {
       password: passwordInput.val().trim()
     };
 
-    if (!userData.first || !userData.last || !userData.email || !userData.password ||) {
+    console.log(userData);
+
+    if ((!userData.first) || (!userData.last) || (!userData.email) || (!userData.password)) {
       return;
     }
     // If we have an email and password, run the signUpUser function
-    signUpUser(userData.first, userData.last, userData.email, userData.password);
+    signUpUser(userData);
     firstName.val("");
     lastName.val("");
     emailInput.val("");
@@ -27,15 +29,13 @@ $(document).ready(function() {
 
   // Does a post to the signup route. If succesful, we are redirected to the members page
   // Otherwise we log any errors
-  function signUpUser(first, last, email, password) {
-    $.post("/api/profile", {
-      first: first name,
-      last: last name,
-      email: email,
-      password: password
+  function signUpUser(userData) {
+    $.post("/api/signup", userData, function(data) {
+      console.log(data);
     }).then(function(data) {
-      window.location.replace(data);
-    }).catch(function(err) {
+      // window.location.replace(data);
+      console.log("data sent to backend");
+    }).then(function(err) {
       console.log(err);
     });
   }

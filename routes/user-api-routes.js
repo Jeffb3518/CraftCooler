@@ -13,18 +13,18 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 // Route for signing up a user
 
 app.post("/api/signup", function(req, res) {
-    console.log(req.body);
+    console.log(req.body.first);
     db.User.create({
       first: req.body.first,
       last: req.body.last,
       email: req.body.email,
       password: req.body.password
 }).then(function() {
-      res.redirect(8080, "/public/login");
+      // res.redirect("/public/login");
     }).catch(function(err) {
-      console.log(err);
-      res.redirect(8080, "/api/profile");
-      res.json(err);
+      // console.log(err);
+      // // res.redirect("/api/profile");
+      // res.json(err);
     });
   });
 // route for logging in
@@ -32,6 +32,20 @@ app.post("/api/signup", function(req, res) {
 app.post("/api/login", passport.authenticate("local"), function(req, res) {
   res.json("/profile");
  });
+
+ app.get("/api/userInfo", function(req, res){
+    db.User.findAll({})
+      .then(function(data) {
+        console.log(data);
+        res.json(data);
+    });
+ });
+
+  // db.User.findOne({
+  //     where: {
+  //       email: req.body.email
+  //     }
+  //   })
 
  // route to log out
 
