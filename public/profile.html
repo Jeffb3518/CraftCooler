@@ -33,7 +33,7 @@
 <body>
     
 <!--navbar-->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="nav-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -59,76 +59,75 @@
       </form>
 
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select a State <span class="caret"></span></a>
-                <ul class="dropdown dropdown-menu" id="state-scroll">
-                    <li><a class="stateSelect" href="#">Alabama</a></li>
-                    <li><a class="stateSelect"href="#">Alaska</a></li>
-                    <li><a class="stateSelect"href="#">Arizona</a></li>
-                    <li><a class="stateSelect"href="#">Arkansas</a></li>
-                    <li><a class="stateSelect"href="#">California</a></li>
-                    <li><a class="stateSelect"href="#">Colorado</a></li>
-                    <li><a class="stateSelect"href="#">Connecticut</a></li>
-                    <li><a class="stateSelect"href="#">Delaware</a></li>
-                    <li><a class="stateSelect"href="#">District of Columbia</a></li>
-                    <li><a class="stateSelect"href="#">Florida</a></li>
-                    <li><a class="stateSelect"href="#">Georgia</a></li>
-                    <li><a class="stateSelect"href="#">Hawaii</a></li>
-                    <li><a class="stateSelect"href="#">Idaho</a></li>
-                    <li><a class="stateSelect"href="#">Illinois</a></li>
-                    <li><a class="stateSelect"href="#">Indiana</a></li>
-                    <li><a class="stateSelect"href="#">Iowa</a></li>
-                    <li><a class="stateSelect"href="#">Kansas</a></li>
-                    <li><a class="stateSelect"href="#">Kentucky</a></li>
-                    <li><a class="stateSelect"href="#">Louisiana</a></li>
-                    <li><a class="stateSelect"href="#">Maine</a></li>
-                    <li><a class="stateSelect"href="#">Maryland</a></li>
-                    <li><a class="stateSelect"href="#">Massachusetts</a></li>
-                    <li><a class="stateSelect"href="#">Michigan</a></li>
-                    <li><a class="stateSelect"href="#">Minnesota</a></li>
-                    <li><a class="stateSelect"href="#">Mississippi</a></li>
-                    <li><a class="stateSelect"href="#">Missouri</a></li>
-                    <li><a class="stateSelect"href="#">Montana</a></li>
-                    <li><a class="stateSelect"href="#">Nebraska</a></li>
-                    <li><a class="stateSelect"href="#">Nevada</a></li>
-                    <li><a class="stateSelect"href="#">New Hampshire</a></li>
-                    <li><a class="stateSelect"href="#">New Jersey</a></li>
-                    <li><a class="stateSelect"href="#">New Mexico</a></li>
-                    <li><a class="stateSelect"href="#">New York</a></li>
-                    <li><a class="stateSelect"href="#">North Carolina</a></li>
-                    <li><a class="stateSelect"href="#">North Dakota</a></li>
-                    <li><a class="stateSelect"href="#">Ohio</a></li>
-                    <li><a class="stateSelect"href="#">Oklahoma</a></li>
-                    <li><a class="stateSelect"href="#">Oregon</a></li>
-                    <li><a class="stateSelect"href="#">Pennsylvania</a></li>
-                    <li><a class="stateSelect"href="#">Rhode Island</a></li>
-                    <li><a class="stateSelect"href="#">South Carolina</a></li>
-                    <li><a class="stateSelect"href="#">South Dakota</a></li>
-                    <li><a class="stateSelect"href="#">Tennessee</a></li>
-                    <li><a class="stateSelect"href="#">Texas</a></li>
-                    <li><a class="stateSelect"href="#">Utah</a></li>
-                    <li><a class="stateSelect"href="#">Vermont</a></li>
-                    <li><a class="stateSelect"href="#">Virginia</a></li>
-                    <li><a class="stateSelect"href="#">Washington</a></li>
-                    <li><a class="stateSelect"href="#">West Virginia</a></li>
-                    <li><a class="stateSelect"href="#">Wisconsin</a></li>
-                    <li><a class="stateSelect"href="#">Wyoming</a></li>
-                </ul>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select a State <span class="caret"></span></a>
+                    <ul class="dropdown dropdown-menu" id="state-scroll">
+                        <li><a class="stateSelect" href="#">Alabama</a></li>
+                        <li><a class="stateSelect"href="#">Alaska</a></li>
+                        <li><a class="stateSelect"href="#">Arizona</a></li>
+                        <li><a class="stateSelect"href="#">Arkansas</a></li>
+                        <li><a class="stateSelect"href="#">California</a></li>
+                        <li><a class="stateSelect"href="#">Colorado</a></li>
+                        <li><a class="stateSelect"href="#">Connecticut</a></li>
+                        <li><a class="stateSelect"href="#">Delaware</a></li>
+                        <li><a class="stateSelect"href="#">District of Columbia</a></li>
+                        <li><a class="stateSelect"href="#">Florida</a></li>
+                        <li><a class="stateSelect"href="#">Georgia</a></li>
+                        <li><a class="stateSelect"href="#">Hawaii</a></li>
+                        <li><a class="stateSelect"href="#">Idaho</a></li>
+                        <li><a class="stateSelect"href="#">Illinois</a></li>
+                        <li><a class="stateSelect"href="#">Indiana</a></li>
+                        <li><a class="stateSelect"href="#">Iowa</a></li>
+                        <li><a class="stateSelect"href="#">Kansas</a></li>
+                        <li><a class="stateSelect"href="#">Kentucky</a></li>
+                        <li><a class="stateSelect"href="#">Louisiana</a></li>
+                        <li><a class="stateSelect"href="#">Maine</a></li>
+                        <li><a class="stateSelect"href="#">Maryland</a></li>
+                        <li><a class="stateSelect"href="#">Massachusetts</a></li>
+                        <li><a class="stateSelect"href="#">Michigan</a></li>
+                        <li><a class="stateSelect"href="#">Minnesota</a></li>
+                        <li><a class="stateSelect"href="#">Mississippi</a></li>
+                        <li><a class="stateSelect"href="#">Missouri</a></li>
+                        <li><a class="stateSelect"href="#">Montana</a></li>
+                        <li><a class="stateSelect"href="#">Nebraska</a></li>
+                        <li><a class="stateSelect"href="#">Nevada</a></li>
+                        <li><a class="stateSelect"href="#">New Hampshire</a></li>
+                        <li><a class="stateSelect"href="#">New Jersey</a></li>
+                        <li><a class="stateSelect"href="#">New Mexico</a></li>
+                        <li><a class="stateSelect"href="#">New York</a></li>
+                        <li><a class="stateSelect"href="#">North Carolina</a></li>
+                        <li><a class="stateSelect"href="#">North Dakota</a></li>
+                        <li><a class="stateSelect"href="#">Ohio</a></li>
+                        <li><a class="stateSelect"href="#">Oklahoma</a></li>
+                        <li><a class="stateSelect"href="#">Oregon</a></li>
+                        <li><a class="stateSelect"href="#">Pennsylvania</a></li>
+                        <li><a class="stateSelect"href="#">Rhode Island</a></li>
+                        <li><a class="stateSelect"href="#">South Carolina</a></li>
+                        <li><a class="stateSelect"href="#">South Dakota</a></li>
+                        <li><a class="stateSelect"href="#">Tennessee</a></li>
+                        <li><a class="stateSelect"href="#">Texas</a></li>
+                        <li><a class="stateSelect"href="#">Utah</a></li>
+                        <li><a class="stateSelect"href="#">Vermont</a></li>
+                        <li><a class="stateSelect"href="#">Virginia</a></li>
+                        <li><a class="stateSelect"href="#">Washington</a></li>
+                        <li><a class="stateSelect"href="#">West Virginia</a></li>
+                        <li><a class="stateSelect"href="#">Wisconsin</a></li>
+                        <li><a class="stateSelect"href="#">Wyoming</a></li>
+                    </ul>
                 </li>
-                </li>
-        
-        <li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span></a></li>
-        
+            </li>     
+        <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>        
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
+<div style="position: absolute; width: 100%;top: 70px;">
 <!--Profile info-->
     <div class="container col-md-3" >
-        <div id="main-bio">
-            <img src="./images/profile1.png" class="img" alt="#" width="292" height="357">
-            <div class="container col-md-12" id="bio-info">
+        <div id="main-bio" style="position: fixed">
+            <img src="./images/profile1.png" class="img" alt="#">
+            <div class="container col-md-3" id="bio-info" style="position: fixed">
                 <h1>Jeremiah Tuna</h1>
                 <b>CC Member Since March 2017</b>
                 <br><br>
@@ -157,6 +156,7 @@
             </tbody>
         </table>
     </div>
+</div>
 
     <script src="./js/frontEndData.js"></script>
 
