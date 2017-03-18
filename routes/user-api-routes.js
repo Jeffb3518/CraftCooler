@@ -13,18 +13,18 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 // Route for signing up a user
 
 app.post("/api/signup", function(req, res) {
-    console.log(req.body);
+    console.log(req.body.first);
     db.User.create({
       first: req.body.first,
       last: req.body.last,
       email: req.body.email,
       password: req.body.password
 }).then(function() {
-      res.redirect(8080, "/public/login");
+      // res.redirect("/public/login");
     }).catch(function(err) {
-      console.log(err);
-      res.redirect(8080, "/api/profile");
-      res.json(err);
+      // console.log(err);
+      // // res.redirect("/api/profile");
+      // res.json(err);
     });
   });
 // route for logging in
