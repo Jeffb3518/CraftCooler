@@ -1,5 +1,4 @@
 body {
-    /*background-image: url("../images/backgrounds/brown-background.jpg");*/
     background: #fffbf4;
  
 }
@@ -95,6 +94,7 @@ body {
 
 .table-bordered{
     border-radius: 4px;
+    border: ;
 }
 
 #state-scroll{
