@@ -7,6 +7,11 @@ console.log("working");
 
 $('.stateSelect').on('click', function(){
 
+$.get("/api/userInfo", function(data){
+    console.log(data);
+    $("#name").html(data[0].first);
+});
+
 $('.beer').empty()
 
 userData.location = $(this).text()
