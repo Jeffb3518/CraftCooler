@@ -23,10 +23,26 @@ app.post("/api/signup", function(req, res) {
       // res.redirect("/public/login");
     }).catch(function(err) {
       // console.log(err);
-      // // res.redirect("/api/profile");
+      // res.redirect("/api/signup");
       // res.json(err);
     });
   });
+
+ // Route for getting some data about our user on client side
+  app.get("/api/user_data", function(req, res) {
+    if (!req.user) {
+      // The user is not logged in, send back an empty object
+      res.json({});
+    }
+    else {
+      // Otherwise send back the user's email and id
+      res.json({
+        email: req.user.email,
+        password: req.user.password
+      });
+    }
+  });
+
 // route for logging in
 
 app.post("/api/login", passport.authenticate("local"), function(req, res) {
@@ -47,11 +63,11 @@ app.post("/api/login", passport.authenticate("local"), function(req, res) {
   //     }
   //   })
 
- // route to log out
+ //route to log out
 
- // Route for logging user out
-  // app.get("/logout", function(req, res) {
-  //   req.logout();
-  //   res.redirect("/login");
+//  Route for logging user out
+//   app.get("/logout", function(req, res) {
+//     req.logout();
+//     res.redirect("/login");
   // });
 };
