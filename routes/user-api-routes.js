@@ -1,5 +1,5 @@
 var express = require("express");
-var passport = require("../config/passport");
+// var passport = require("../config/passport");
 
 // Import the model to use its database functions.
 var db = require("../models");
@@ -8,7 +8,7 @@ var db = require("../models");
 module.exports = function(app) {
 
 // Requiring our custom middleware for checking if a user is logged in
-var isAuthenticated = require("../config/middleware/isAuthenticated");
+// var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 // Route for signing up a user
 
@@ -45,9 +45,10 @@ app.post("/api/signup", function(req, res) {
 
 // route for logging in
 
-app.post("/api/login", passport.authenticate("local"), function(req, res) {
-  res.json("/profile");
- });
+// app.post("/api/login", function(req, res) {
+//   console.log(req.body.email);
+//   res.json({status: 200});
+//  });
 
  app.get("/api/userInfo", function(req, res){
     db.User.findAll({})
@@ -56,6 +57,35 @@ app.post("/api/login", passport.authenticate("local"), function(req, res) {
         res.json(data);
     });
  });
+
+ app.post("/api/login", function(req, res){
+        db.User.findAll({}).then(function(data) {
+          for (i = 0; i < data.length; i++){
+            if (data[i].dataValues.email == req.body.email && data[i].dataValues.password == req.body.password){
+              req.session.userInfo = {
+                  email: req.body.email
+              } 
+              req.session.isAuth = true;
+            } else {
+              req.session.isAuth = false;
+            }
+          }
+
+          if (req.session.isAuth == true){
+            res.send({status: 'success'});
+          } else if (req.session.isAuth == false){
+            res.send({status: 'invalid'});
+          }
+        });
+    });
+
+  app.get('/isAuthenticated', function(req, res){
+        if (req.session.isAuth == true){
+            res.json(req.session.userInfo);
+        } else {
+            res.json('invalid');
+        }
+    });
 
   // db.User.findOne({
   //     where: {

@@ -1,4 +1,4 @@
- module.exports = function(app) {
+  module.exports = function(app) {
 
 var request = require('request');
  app.post("/beerData", function(req, res) {
